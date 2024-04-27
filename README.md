@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+#Задание 1: Таймер обратного отсчета
+##Цель: Создать простой таймер обратного отсчета, который начинает отсчет, например, с 10 до 0.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###Шаги:
+Создайте компонент CountdownTimer.
+Используйте useState для хранения текущего значения таймера.
+Настройте useEffect, чтобы установить интервал, который уменьшает значение каждую секунду.
+После того как таймер достигнет нуля, остановите интервал с помощью функции очистки в useEffect.
 
-## Available Scripts
+#Задание 2: Загрузка и отображение данных
+##Цель: Создать компонент, который загружает список пользователей с API при первой загрузке компонента.
 
-In the project directory, you can run:
+###Шаги:
+Создайте компонент UserList.
+Используйте useState для хранения списка пользователей.
+Используйте useEffect для отправки HTTP-запроса к API (например, https://jsonplaceholder.typicode.com/users) при монтировании компонента.
+Отобразите список пользователей на странице.
 
-### `npm start`
+#Задание 3: Слежение за изменением размера окна
+##Цель: Создать компонент, который отображает и обновляет текущий размер окна браузера.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+###Шаги:
+Создайте компонент WindowSize.
+Используйте useState для хранения размеров окна.
+Используйте useEffect для добавления обработчика события resize, который обновляет состояние с текущими размерами окна.
+Убедитесь, что обработчик события удаляется при размонтировании компонента, чтобы избежать утечек памяти.
